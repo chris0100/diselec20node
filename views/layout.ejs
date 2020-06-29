@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+          integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+
+    <!--NUEVOS ESTILOS -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/new/flaticon.css"/>
+    <link rel="stylesheet" href="/css/new/slicknav.min.css"/>
+    <link rel="stylesheet" href="/css/new/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="/css/new/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="/css/new/animate.css"/>
+<!--    <link rel="stylesheet" href="/css/new/style.css"/>-->
+    <!--NUEVOS ESTILOS -->
+
+
+
+    <link rel="stylesheet" href="/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
+
+
+    <!--para incluir textos animados-->
+
+    <link rel="shortcut icon" type="image/png" href="img/logo-sin-fondo-icono.png"/>
+
+
+    <!--para funcionalidad scrolli-->
+    <!-- para realizar la efecto scroll -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <style>
+        .scrolli {
+            visibility: hidden;
+        }
+    </style>
+
+    <title><%- nombrePagina %></title>
+</head>
+
+
+<!-- START HERE -->
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+
+<!--barra de navegacion-->
+<nav class="navbar navbar-expand-lg fixed-top barra-nav return-bg-primary" id="menu">
+    <div class="container">
+        <a href="/" class="navbar-brand animated zoomIn delay-.1s">
+            <img src="/img/logo-sin-fondo.png" alt="logo-ppal" class="logo-ppal">
+        </a>
+
+        <!--para el collapse responsive-->
+        <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!--contenido cuando colapsa-->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto animated zoomIn delay-.1s">
+                <li class="nav-item active">
+                    <a href="/" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                </li>
+                <li class="nav-item"><a href="/servicios" class="nav-link"><i class="fas fa-briefcase"></i> Servicios</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-book-open"></i> Catálogo</a></li>
+                <li class="nav-item"><a href="/contacto" class="nav-link"><i class="fas fa-id-card-alt"></i> Contactenos</a></li>
+                <li class="mx-3 nav-item"> </li>
+                <li class="nav-item"><a href="/carrito" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div class="mr-5 d-flex mb-3"><i class="fas fa-user text-white mr-2"></i><a href="#" class="nav-link"><small>Iniciar Sesión</small></a></div>
+        <div class="mr-5 d-flex"><i class="fas fa-edit text-white mr-2"></i><a href="#" class="nav-link"><small>Crear Cuenta</small></a></div>
+    </div>
+
+</nav>
+
+
+<%- body %>
+
+
+<!--footer-->
+<footer class="footer-section" id="site-footer">
+    <div class="footer__box">
+        <div class="container">
+
+            <div class="row mb-5">
+
+                <div class="col-md-7">
+                    <h4 class="texto-heading-footer border-bottom">Atención al Cliente</h4>
+                    <p class="text-white"><i class="fas fa-home mr-2 mb-3"></i> Calle 55bn con Avenida 2f, Cali, Colombia</p>
+                    <p class="text-white"><i class="fas fa-envelope-open mr-2 mb-3"></i> Contacto: contacto@diseñoelectronico.com</p>
+                    <p class="text-white"><i class="fas fa-phone mr-2 mb-3"></i> WhatsApp: (57) 300 344 39 01</p>
+                </div>
+
+                <div class="col-md-5">
+                    <h4 class="texto-heading-footer border-bottom">Horario de Atención</h4>
+                    <p class="text-white mb-3"> Horario: Lunes a Viernes 7:30AM a 12:30PM y 1:30PM a 5:30PM</p>
+                        <p class="text-white">Los fines de semana no hay atención al público</p>
+                </div>
+            </div>
+
+
+            <div class="row mb-3">
+
+                <div class="col-md-7">
+                    <h4 class="texto-heading-footer border-bottom">Diseño Electrónico - Asistencia Avanzada</h4>
+                    <p class="footer-text">Somos una empresa con mas de diez años de experiencia en la reparación
+                        y mantenimiento de tarjetas electronicas a nivel industrial para el manejo principalmente de
+                        compresores, montacargas, retroexcavadoras entre otros.<br> <span
+                                style="color:rgb(236, 252, 10)">Cali - Colombia</span></p>
+                </div>
+
+                <div class="col-md-5 d-flex flex-direction justify-content-center">
+                    <div class="footer__imagenes d-flex align-items-center">
+                        <img src="/img/logo-sin-fondo-icono.png" alt="logo small" class="img-fluid footer__imagenes--1">
+                        <span class="footer__espacio">&nbsp; &nbsp;&nbsp; &nbsp;</span>
+                        <img src="/img/bandera-de-colombia-con-escudo.jpg" alt="logo small"
+                             class="img-fluid footer__imagenes--2">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div>
+                <img src="/img/mediosDePago/barraMediosDePago.png" class="img-fluid">
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+
+<!--popup contact modal-->
+<div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="contacto-popup"></div>
+
+            <div class="modal-header">
+                <h5 class="modal-title modal-h5">Adquiere nuestros servicios</h5>
+                <button class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body">
+                <form action="" method="post">
+                    <div class="form-group">
+                        <input type="text" class="form__input" placeholder="Nombre" id="name" name="name" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form__input" placeholder="Email" id="email" name="email" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form__input" placeholder="Telefono" name="phone" id="tel" required/>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea name="message" cols="30" rows="3" class="form__input"
+                                  placeholder="Escribenos, estamos para ayudarte" name="message" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-warning button">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--nuevos estilos js -->
+
+
+
+
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+<script src="/js/popper.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+<!--====== Javascripts & Jquery ======-->
+<script src="/js/new/jquery.slicknav.min.js"></script>
+<script src="/js/new/owl.carousel.min.js"></script>
+<script src="/js/new/jquery.nicescroll.min.js"></script>
+<script src="/js/new/jquery.zoom.min.js"></script>
+<script src="/js/new/jquery-ui.min.js"></script>
+<script src="/js/new/main.js"></script>
+<!--nuevos estilos js -->
+
+<!--para obtener el año actualizado de copyright-->
+<script>
+    // Get the current year for the copyright
+    $("#year").text(new Date().getFullYear());
+</script>
+
+<!--para cambio de color en navbar-->
+<script>
+    $(window).scroll(function () {
+        if ($("#menu").offset().top > 56) {
+            $("#menu").addClass("bg-primary");
+        } else {
+            $("#menu").addClass("return-bg-primary");
+            $("#menu").removeClass("bg-primary");
+        }
+    });
+
+    // scroll en pantalla
+    ScrollReveal().reveal('.scrolli');
+    ScrollReveal().reveal('.scrolli', {delay: 700, duration: 1000, reset: false});
+    ScrollReveal().reveal('.scrolli', {scale: 0.85});
+
+
+    //ocultar un elemento
+    //$(".icon-show__box").hide(5);
+    //$(".icon-show__box").delay(2400).fadeIn(1000);
+</script>
+
+
+</body>
+</html>
+
