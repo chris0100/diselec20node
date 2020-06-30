@@ -4,7 +4,6 @@
         <h4>Carrito de Compras</h4>
         <div class="site-pagination">
             <a href="/">Inicio</a> /
-            <a href="/carrito">Tu Carrito</a>
         </div>
     </div>
 </div>
@@ -14,27 +13,27 @@
 <!-- cart section end -->
 <section class="cart-section spad">
     <div class="container">
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-lg-8">
                 <div class="cart-table">
-                    <h3>Your Cart</h3>
+                    <h3>Tu carrito</h3>
                     <div class="cart-table-warp">
                         <table>
                             <thead>
                             <tr>
-                                <th class="product-th">Product</th>
-                                <th class="quy-th">Quantity</th>
-                                <th class="size-th">SizeSize</th>
-                                <th class="total-th">Price</th>
+                                <th class="product-th">Producto</th>
+                                <th class="quy-th">Cantidad</th>
+                                <th class="size-th">Descripcion</th>
+                                <th class="total-th">Precio</th>
                             </tr>
                             </thead>
                             <tbody>
                             <tr>
                                 <td class="product-col">
-                                    <img src="img/cart/1.jpg" alt="">
+                                    <img src="img/productos/12.jpg" alt="">
                                     <div class="pc-title">
-                                        <h4>Animal Print Dress</h4>
-                                        <p>$45.90</p>
+                                        <h4>Breaker GE</h4>
+                                        <p>$25.000</p>
                                     </div>
                                 </td>
                                 <td class="quy-col">
@@ -44,15 +43,15 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="size-col"><h4>Size M</h4></td>
-                                <td class="total-col"><h4>$45.90</h4></td>
+                                <td class="size-col"><h4>12 Voltios Original</h4></td>
+                                <td class="total-col"><h4>$25.000</h4></td>
                             </tr>
                             <tr>
                                 <td class="product-col">
-                                    <img src="img/cart/2.jpg" alt="">
+                                    <img src="img/productos/09.jpg" alt="">
                                     <div class="pc-title">
-                                        <h4>Ruffle Pink Top</h4>
-                                        <p>$45.90</p>
+                                        <h4>Arrancador Siemens</h4>
+                                        <p>$55.000</p>
                                     </div>
                                 </td>
                                 <td class="quy-col">
@@ -62,15 +61,15 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="size-col"><h4>Size M</h4></td>
-                                <td class="total-col"><h4>$45.90</h4></td>
+                                <td class="size-col"><h4>12 W Segunda mano</h4></td>
+                                <td class="total-col"><h4>$55.000</h4></td>
                             </tr>
                             <tr>
                                 <td class="product-col">
-                                    <img src="img/cart/3.jpg" alt="">
+                                    <img src="img/productos/13.jpg" alt="">
                                     <div class="pc-title">
-                                        <h4>Skinny Jeans</h4>
-                                        <p>$45.90</p>
+                                        <h4>Breaker Spectra</h4>
+                                        <p>$35.000</p>
                                     </div>
                                 </td>
                                 <td class="quy-col">
@@ -80,22 +79,42 @@
                                         </div>
                                     </div>
                                 </td>
-                                <td class="size-col"><h4>Size M</h4></td>
-                                <td class="total-col"><h4>$45.90</h4></td>
+                                <td class="size-col"><h4>Automatico 3 Tiempos</h4></td>
+                                <td class="total-col"><h4>$35.000</h4></td>
                             </tr>
+
+
                             </tbody>
                         </table>
                     </div>
                     <div class="total-cost">
-                        <h6>Total <span>$99.90</span></h6>
+                        <h6>Total <span>$115.000</span></h6>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 card-right">
-                <a href="" class="site-btn">Proceed to checkout</a>
-                <a href="" class="site-btn sb-dark">Continue shopping</a>
+                <a href="/checkout" class="site-btn">Proceder al pago</a>
+                <a href="/catalogo" class="site-btn sb-dark">Seguir Comprando</a>
             </div>
         </div>
     </div>
 </section>
 <!-- cart section end -->
+
+
+
+<!-- CONTINUA COMPRANDO section -->
+<section class="top-letest-product-section">
+    <div class="container">
+
+        <div class="text-center heading-secondary__box">
+            <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
+                <h2 class="font-weight-bold">CONTINUA COMPRANDO</h2>
+            </div>
+        </div>
+
+        <%- include('partials/slideProductos.ejs') %>
+
+    </div>
+</section>
+<!-- ULTIMOS PRODUCTOS section end -->

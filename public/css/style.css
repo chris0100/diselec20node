@@ -339,6 +339,31 @@ h6 {
 .carousel {
   box-shadow: 3px 2px 11px 0px rgba(50, 50, 50, 0.7); }
 
+
+input[type="date"]{
+background-color: #f0f0f0;
+  border-radius: 50px;
+  border-color: transparent;
+}
+
+input[type="date"]:focus{
+  background-color: #f0f0f0;
+}
+
+
+select.form-control{
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  border-color: transparent;
+}
+
+select.form-control:focus{
+  background-color: #f0f0f0;
+}
+
+
+
+
 .card-section {
   background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.6), #f55b08), url(./../../img/portada-ppal1.jpg);
   background-size: cover;
@@ -439,7 +464,7 @@ h6 {
   color: inherit;
   padding: .5rem .8rem;
   border-radius: 4px;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   border: none;
   border-bottom: 3px solid transparent;
   width: 90%;
@@ -452,10 +477,14 @@ h6 {
   .form__input:focus {
     outline: none;
     box-shadow: 0px 1px 13px 0px rgba(50, 50, 50, 0.65);
-    border-bottom: 3px solid #55c57a; }
+    border-bottom: 2px solid rgba(129, 197, 137, 0.83); }
   @media (max-width: 767px) {
     .form__input {
       width: 100%; } }
+
+
+
+
 
 .contacto {
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(170, 180, 173, 0.5)), url(../../img/contacto2.jpg);
@@ -867,7 +896,7 @@ hr {
 
 
 .bg-reparacion {
-  background-image: linear-gradient(to right bottom, rgb(218, 226, 225), rgba(147, 229, 245, 0.68)), url(./../../img/portada-ppal5.jpg);
+  background-image: linear-gradient(to right bottom, rgb(254, 255, 253), rgba(221, 245, 231, 0.86)), url(./../../img/portada-ppal5.jpg);
   background-size: cover;
   margin: 7rem 0 7rem 0;
   padding: 9rem 0 9rem 0;
@@ -885,16 +914,164 @@ hr {
 
 /* buttons */
 
+.admin-btn, .admin-btn:link, .admin-btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  /* ahora configuramos el padding para el top y el bottom */
+  padding: 1rem .3rem;
+  margin: 0 3px;
+  display: inline-block;
+  /*establece un bloque de espacio con amplio margen para editar*/
+  /* se centra el texto a traves de el text align usado en textbox para que el padre centre todo lo que tiene inmerso. */
+  border-radius: .5rem;
+  transition: all .2s;
+  /*coloca todas las transiciones con un margen de tiempo de .2s(incluye las transiciones de texto)*/
+  position: relative;
+  font-size: .8rem;
+  border: 1px solid rgba(49, 49, 49, 0.07);
+  cursor: pointer;
+  min-width: 167px;
+  line-height: normal;
+  text-align: center;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  }
+
+.admin-btn:hover {
+  /* rotamos sobre el eje y */
+  transform: translateY(-0.3rem);
+  /* vamos a colocarle una sombra al boton cuando el clic se posa sobre boton, se aplica tambien para cuando esta active */
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  /*efecto de posicionarme sobre el boton*/
+  color: white}
+
+.admin-btn:hover::after {
+  transform: scaleX(1.4) scale(1.6);
+  /*aumenta el tamaño al dar clic en el boton*/
+  opacity: 0;
+  /*le elimina el color al posarse sobre el boton con el mouse, para generar mejor efecto.*/ }
+
+.admin-btn:active, .admin-btn:focus {
+  transform: translateY(-0.1rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  outline: none; }
+.admin-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  /*toma una referencia absoluta a partir del top y left*/
+  top: 0;
+  left: 0;
+  z-index: -1;
+  /*lo coloca por debajo de los demas*/
+  transition: all .4s;
+  /*coloca todas las transiciones por tiempo de .4s en after*/ }
+.admin-btn--animated {
+  animation: moveInButton .5s ease-out .75s;
+  animation-fill-mode: backwards;
+  /*se utiliza para que los cambios se realicen antes de que la animacion empiece*/
+}
+
+.admin-btn--danger{
+  background: #ff594b;
+  color: #fff;
+}
+
+.admin-btn--primary{
+  background: #3246f5;
+  color: #fff;
+}
+
+.admin-btn--secondary{
+  background: #59595e;
+  color: #fff;
+}
+
+.admin-btn--warning{
+  background: #a03ec1;
+  color: #fff;
+}
+
+.admin-btn--success{
+  background: #44a33c;
+  color: #fff;
+}
+
+.admin-btn--info{
+  background: #299a9c;
+  color: #fff;
+}
+
+.activado{
+  -webkit-box-shadow: -4px 5px 24px 11px rgba(37,38,51,0.69) !important;
+  -moz-box-shadow: -4px 5px 24px 11px rgba(37,38,51,0.69)!important;
+  box-shadow: -4px 5px 24px 11px rgba(37,38,51,0.69) !important;
+}
+
+
+
+
+
+.campo label{
+  flex: 0 0 120px;
+  vertical-align: center;
+  margin-bottom: 0 !important;
+}
+
+.contenedor-editor {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+trix-editor  {
+  display: block;
+}
+trix-editor h1 {
+  text-align: left!important;
+}
+.campo.descripcion label {
+  display: block;
+  margin-bottom: 2rem;
+  align-self: flex-start;
+  padding-top: 4rem;
+}
+trix-toolbar,
+trix-editor {
+  background-color: #f0f0f0 !important;
+}
+trix-toolbar {
+  padding: 1rem;
+}
+trix-editor {
+  font-size: 1.2rem;
+  min-height: 20rem!important;
+  padding: 2rem;
+}
+trix-editor h1,
+trix-editor blockquote {
+  color: black;
+}
+trix-toolbar .trix-button-group {
+  margin-bottom: 0;
+}
+trix-toolbar .trix-button--icon-strike {
+  display: none;
+}
+
+
+
 .site-btn {
   display: inline-block;
   border: none;
   font-size: 14px;
-  font-weight: 600;
   min-width: 167px;
   padding: 18px 47px 14px;
   border-radius: 50px;
   text-transform: uppercase;
-  background: #3142f5;
+  background: #3246f5;
   color: #fff;
   line-height: normal;
   cursor: pointer;
@@ -918,7 +1095,7 @@ hr {
 }
 
 .site-btn.sb-dark {
-  background: #413a3a;
+  background: #df304c;
 }
 
 .site-btn.sb-dark.sb-line {
@@ -1063,6 +1240,13 @@ hr {
   background-color: transparent;
   border-radius: 0;
 }
+
+.label-pago{
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 
 .accordion-area .panel-body {
   padding-top: 10px;
@@ -1586,12 +1770,20 @@ hr {
   display: block;
 }
 
+
+.product-item .pi-pic a {
+  text-decoration: none;
+  color: white;
+
+}
+
+
 .product-item .tag-new,
 .product-item .tag-sale {
   position: absolute;
   right: 16px;
   top: 14px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
   color: #fff;
   background: #50e550;
@@ -1599,7 +1791,7 @@ hr {
   text-transform: uppercase;
   padding: 5px 9px 1px;
   border-radius: 15px;
-  width: 42px;
+  width: 80px;
 }
 
 .product-item .tag-sale {
@@ -1675,6 +1867,11 @@ hr {
 .product-item .pi-text {
   padding-top: 22px;
   height: 87px;
+}
+
+.product-item .pi-text a{
+  text-decoration: none;
+  color: black;
 }
 
 .product-item .pi-text h6 {
@@ -1997,16 +2194,22 @@ hr {
   Category page
 ------------------*/
 
+.imagen-catalogo{
+  width: 265px;
+  height: 250px;
+}
+
+
 .filter-widget {
   margin-bottom: 100px;
 }
 
 .filter-widget .fw-title {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   color: #414141;
   text-transform: uppercase;
-  margin-bottom: 45px;
+  margin-bottom: 25px;
 }
 
 .category-menu {
@@ -2016,7 +2219,7 @@ hr {
 .category-menu li a {
   display: block;
   position: relative;
-  font-size: 12px;
+  font-size: 18px;
   color: #414141;
   border-bottom: 1px solid #ebebeb;
   padding: 12px 0 5px 20px;
@@ -2033,16 +2236,16 @@ hr {
   height: 9px;
   left: 0;
   top: 13px;
-  border: 1px solid #f51167;
+  border: 1px solid #2b5af5;
   border-radius: 50%;
 }
 
 .category-menu li a:hover {
-  color: #f51167;
+  color: #2b5af5;
 }
 
 .category-menu li a:hover:after {
-  background: #f51167;
+  background: #2b5af5;
 }
 
 .category-menu li a:last-child a {
@@ -2068,7 +2271,7 @@ hr {
 }
 
 .category-menu li:hover>a {
-  color: #f51167;
+  color: #2b5af5;
 }
 
 .category-menu li.active>.sub-menu {
@@ -2308,7 +2511,7 @@ hr {
 }
 
 .product-details .p-title {
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 700;
   color: #414141;
   text-transform: uppercase;
@@ -2323,7 +2526,7 @@ hr {
 }
 
 .product-details .p-stock {
-  font-size: 12px;
+  font-size: 18px;
   color: #000;
   font-weight: 700;
   color: #414141;
@@ -2331,16 +2534,21 @@ hr {
 }
 
 .product-details .p-stock span {
-  color: #f51167;
+  color: #3f66f5;
 }
 
 .product-details .p-rating {
   margin-bottom: 15px;
 }
 
-.product-details .p-rating i {
-  color: #f51167;
+
+
+.product-details .p-rating i:not(.far){
+  color: #fffe27;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
 }
+
 
 .product-details .p-rating i.fa-fade {
   color: #e6e6e6;
@@ -2352,7 +2560,7 @@ hr {
 
 .product-details .p-review a {
   color: #414141;
-  font-size: 14px;
+  font-size: 18px;
   margin-right: 12px;
   margin-left: 12px;
 }
@@ -2449,7 +2657,7 @@ hr {
   line-height: 36px;
   cursor: pointer;
   text-align: center;
-  font-size: 18px;
+  font-size: 24px;
   color: #404040;
 }
 
@@ -2460,7 +2668,7 @@ hr {
   height: 36px;
   line-height: 40px;
   padding: 0;
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   background-color: transparent;
 }
@@ -2477,6 +2685,14 @@ hr {
 /* ----------------
   Cart page
 ---------------------*/
+
+.cart-section{
+  background-image: linear-gradient(to right bottom, rgba(163, 236, 255, 0.24), #a0a6a4), url(./../../img/carrito-ppal.jpg);
+  background-size: cover;
+  padding: 2rem 0 2rem 0;
+}
+
+
 
 .scrollbar {
   margin: 80px auto 0;
@@ -2705,8 +2921,12 @@ hr {
   margin-bottom: 54px;
 }
 
+.checkout-form .address-inputs input {
+  background-color: white;
+}
+
 .address-rb {
-  text-align: right;
+  text-align: left;
   margin-bottom: 30px;
 }
 
@@ -2750,7 +2970,7 @@ hr {
   height: 13px;
   left: 0;
   top: 4px;
-  border: 2px solid #e1e1e1;
+  border: 2px solid #919191;
   border-radius: 40px;
 }
 
@@ -2796,9 +3016,10 @@ hr {
 }
 
 .checkout-cart {
-  background: #f0f0f0;
+  background: linear-gradient(to right, #fefffd, rgba(239, 238, 255, 0.54)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 40px 24px 30px;
   border-radius: 25px;
+  border: 1px solid #d0d0d0;
 }
 
 .checkout-cart h3 {
@@ -2859,7 +3080,6 @@ hr {
 }
 
 .checkout-cart .price-list li.total {
-  padding-top: 35px;
   font-weight: 700;
 }
 
@@ -2871,7 +3091,8 @@ hr {
   padding-top: 60px;
   position: relative;
   padding-bottom: 60px;
-  background-image: linear-gradient(to right bottom, rgba(240, 255, 244, 0.24), #f7fffc), url(./../../img/portada-ppal4.png);
+  background-image: linear-gradient(to right bottom, rgba(240, 255, 244, 0), #a9afaa), url(./../../img/portada-ppal7.jpg);
+
 }
 
 .contact-info h3 {
@@ -2947,6 +3168,28 @@ hr {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+/*---------------------
+LOGIN SECTION
+ */
+
+.login-section{
+   padding-top: 150px;
+   padding-bottom: 100px;
+   background-image: linear-gradient(to right bottom, rgba(45, 62, 245, 0.68), rgba(94, 255, 59, 0.47)), url(./../../img/portada-ppal3.jpg);
+ }
+
+.registro-section{
+  padding-top: 150px;
+  padding-bottom: 100px;
+  background-image: linear-gradient(to right bottom, rgba(45, 62, 245, 0.68), rgba(94, 255, 59, 0.47)), url(./../../img/portada-ppal3.jpg);
+}
+
+
+
 
 /* ----------------
   Responsive
@@ -3188,3 +3431,45 @@ hr {
     display: none;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+/*
+ADMIN SECTION******
+ */
+
+.admin-section{
+  padding-top: 150px;
+  padding-bottom: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
