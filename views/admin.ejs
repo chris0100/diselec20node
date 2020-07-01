@@ -1,22 +1,13 @@
 <section class="admin-section">
     <div class="container">
 
-        <div class="row">
-
-            <a href="/editar-perfil" class="admin-btn admin-btn--primary ">Editar Perfil</a>
-            <a href="/cambiar-password" class="admin-btn admin-btn--danger">Cambiar Password</a>
-            <a href="" class="admin-btn admin-btn--info">Imagen de Perfil</a>
-            <a href="" class="admin-btn admin-btn--success">Ver Ordenes</a>
-            <a href="" class="admin-btn admin-btn--secondary">Direcciones de Envio</a>
-            <a href="" class="admin-btn admin-btn--warning">Metodos de Pago</a>
-
-        </div>
+        <%- include('partials/menuAdmin.ejs')%>
 
 
 
         <div class="text-center my-5">
             <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
-                <h2 class="font-weight-bold">BIENVENIDO</h2>
+                <h2 class="font-weight-bold sombra-texto">BIENVENIDO</h2>
             </div>
         </div>
 
@@ -26,11 +17,11 @@
         </div>
 
         <div class="row d-flex justify-content-center mt-3">
-            <h4>Christian Alexis Rodriguez Ruales</h4>
+            <h4 class="sombra-texto">Christian Alexis Rodriguez Ruales</h4>
         </div>
 
         <div class="row d-flex justify-content-center">
-        <span>Ultima conexion: 24 de Junio del 2020</span>
+        <span class="sombra-texto">Ultima conexión: 24 de Junio del 2020</span>
         </div>
 
 

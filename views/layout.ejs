@@ -30,10 +30,16 @@
     <link rel="stylesheet" href="/css/bootstrap.css"/>
     <link rel="stylesheet" href="/css/style.css"/>
 
+    <!--TABLAS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/4.0.0/material-components-web.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.material.min.css">
 
-    <!--para incluir textos animados-->
+
+
+
 
     <link rel="shortcut icon" type="image/png" href="img/logo-sin-fondo-icono.png"/>
+
 
 
     <!--para funcionalidad scrolli-->
@@ -77,14 +83,13 @@
         <!--contenido cuando colapsa-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto animated zoomIn delay-.1s">
+
                 <li class="nav-item active">
                     <a href="/" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
                 </li>
-                <li class="nav-item"><a href="/servicios" class="nav-link"><i class="fas fa-briefcase"></i> Servicios</a></li>
-                <li class="nav-item"><a href="/catalogo" class="nav-link"><i class="fas fa-book-open"></i> Catálogo</a></li>
-                <li class="nav-item"><a href="/contacto" class="nav-link"><i class="fas fa-id-card-alt"></i> Contactenos</a></li>
-                <li class="mx-3 nav-item"> </li>
-                <li class="nav-item"><a href="/carrito" class="nav-link"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+
+                <%- include('partials/navegacion-normal.ejs') %>
+
             </ul>
         </div>
     </div>
@@ -215,6 +220,12 @@
 <script src="/js/new/main.js"></script>
 <!--nuevos estilos js -->
 
+<!--Tablas-->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.21/js/dataTables.material.min.js"></script>
+
+
 <!--para obtener el año actualizado de copyright-->
 <script>
     // Get the current year for the copyright
@@ -232,6 +243,12 @@
         }
     });
 
+    //tooltips
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+
+
     // scroll en pantalla
     ScrollReveal().reveal('.scrolli');
     ScrollReveal().reveal('.scrolli', {delay: 700, duration: 1000, reset: false});
@@ -241,6 +258,48 @@
     //ocultar un elemento
     //$(".icon-show__box").hide(5);
     //$(".icon-show__box").delay(2400).fadeIn(1000);
+
+
+    //llama a los datatables jquery plugins
+    $(document).ready(function () {
+        $('#example').DataTable({
+            autoWidth: false,
+            scrollX: false,
+            columnDefs: [
+                {
+                    targets: ['_all'],
+                    className: 'mdc-data-table__cell'
+                }
+            ],
+            "language": {
+                "sProcessing": "Procesando...",
+                "sLengthMenu": "Mostrar  _MENU_  Registros",
+                "sZeroRecords": "No se encontraron resultados",
+                "sEmptyTable": "Ningún dato disponible en esta tabla =(",
+                "sInfo": "Hay _TOTAL_ registros encontrados",
+                "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sInfoPostFix": "",
+                "sSearch": "Buscar:",
+                "sUrl": "",
+                "sInfoThousands": ",",
+                "sLoadingRecords": "Cargando...",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast": "Último",
+                    "sNext": "Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "oAria": {
+                    "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+                    "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+                },
+                "buttons": {
+                    "copy": "Copiar",
+                    "colvis": "Visibilidad"
+                }
+            }
+        });
+    });
 </script>
 
 

@@ -14,263 +14,315 @@
 <!-- checkout section  -->
 <section class="checkout-section spad">
     <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-8 order-2 order-lg-1">
-                <form class="checkout-form">
-                    <div class="cf-title">Direccion de Envio / Facturación</div>
 
-                    <div class="row">
 
-                        <div class="col-md-7">
-                            <p>*Informacion de facturación</p>
+        <form>
+            <div class="row mb-5">
+
+                <div class="col-lg-8 order-2 order-lg-1 p-3 checkout-cart">
+                    <div class="checkout-form">
+                        <div class="text-center cf-title">Direccion de Envio y Facturación</div>
+
+                        <div class="row mb-4">
+
+                            <div class="col-md-7">
+                                <p class="font-weight-bold">Dirección a Usar</p>
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="cf-radio-btns address-rb">
+                                    <div class="cfr-item">
+                                        <input type="radio" name="pm" id="one">
+                                        <label for="one">Usar dirección por defecto</label>
+                                    </div>
+
+                                    <div class="cfr-item">
+                                        <input type="radio" name="pm" id="two">
+                                        <label for="two">Usar otra dirección</label>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="col-md-5">
 
-                            <div class="cf-radio-btns address-rb">
-                                <div class="cfr-item">
-                                    <input type="radio" name="pm" id="one">
-                                    <label for="one">Usar dirección por defecto</label>
+                        <div class="cf-title text-center">Información de Envio</div>
+
+                        <div class="row">
+
+                            <div class="col-md-7">
+                                <p class="font-weight-bold" style="margin-bottom: 0 !important;">Recoger en el Local</p>
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="cf-radio-btns">
+                                    <div class="cfr-item">
+                                        <input type="radio" name="envio" id="envio-l">
+                                        <label for="envio-l">$0</label>
+                                    </div>
                                 </div>
 
-                                <div class="cfr-item">
-                                    <input type="radio" name="pm" id="two">
-                                    <label for="two">Usar otra dirección</label>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-md-7">
+                                <p class="font-weight-bold">Estandar</p>
+                            </div>
+
+                            <div class="col-md-5">
+
+                                <div class="cf-radio-btns address-rb">
+                                    <div class="cfr-item">
+                                        <input type="radio" name="envio" id="envio-s">
+                                        <label for="envio-s">$15.000</label>
+                                    </div>
                                 </div>
+
                             </div>
 
                         </div>
 
                     </div>
 
+                    <hr>
 
-                    <div class="row address-inputs">
 
+                    <div class="row address-inputs contact-form">
 
                         <div class="col-md-12">
-                            <input type="text" placeholder="Nombre Completo" name="nombre" class="form__input">
-                            <input type="text" placeholder="Dirección" name="direccion" class="form__input">
-                            <input type="text" placeholder="Dirección Alternativa" name="direccion-dos"
-                                   class="form__input">
+                            <div class="form-group">
+                                <label class="label-pago">Nombre</label>
+                                <input type="text" placeholder="Nombre Completo" name="nombre" class="form-control">
+                            </div>
+
+
+                            <div class="from-group">
+                                <label class="label-pago">Dirección</label>
+                                <input type="text" placeholder="Dirección" name="direccion" class="form-control">
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" placeholder="Telefono" name="telefono" class="form__input">
+                            <div class="form-grupo">
+                                <label class="label-pago">Telefono</label>
+                                <input type="text" placeholder="Telefono" name="telefono" class="form-control">
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" placeholder="Codigo Postal" name="cod-postal" class="form__input">
+                            <div class="form-group">
+                                <label class="label-pago">Codigo Postal</label>
+                                <input type="text" placeholder="Codigo Postal" name="cod-postal" class="form-control">
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" placeholder="Departamento" name="departamento" class="form__input">
+                            <div class="form-group">
+                                <label class="label-pago">Departamento</label>
+                                <input type="text" placeholder="Departamento" name="departamento" class="form-control">
+                            </div>
                         </div>
 
                         <div class="col-md-6">
-                            <input type="text" placeholder="Ciudad" name="ciudad" class="form__input">
+                            <div class="form-group">
+                                <label class="label-pago">Ciudad</label>
+                                <input type="text" placeholder="Ciudad" name="ciudad" class="form-control">
+                            </div>
                         </div>
-
 
                     </div>
 
 
-                    <div class="cf-title">Información de Envio</div>
-                    <div class="row shipping-btns">
-
-                        <div class="col-6">
-                            <h4>Recoger en Tienda</h4>
-                        </div>
-                        <div class="col-6">
-                            <div class="cf-radio-btns">
-                                <div class="cfr-item">
-                                    <input type="radio" name="shipping" id="ship-1">
-                                    <label for="ship-1">$0</label>
-                                </div>
-                            </div>
-
-                        </div>
 
 
-                        <div hidden class="col-12 mb-4" id="infoRecoger">
-                            <small>Puedes recoger tu pedido en el establecimiento con la orden de compra que se
-                                genera
-                                al final de realizar la orden en los horarios de Lunes a Viernes 7:30AM a 12:30PM y
-                                1:30PM a
-                                5:30PM
-                                comunicandote previamente al telefono (57) 300 344 39 01</small>
-                        </div>
-
-
-                        <div class="col-6">
-                            <h4>Premium</h4>
-                        </div>
-                        <div class="col-6">
-                            <div class="cf-radio-btns">
-                                <div class="cfr-item">
-                                    <input type="radio" name="shipping" id="ship-2">
-                                    <label for="ship-2">$15.000</label>
-                                </div>
-                            </div>
+                    <div class="checkout-form mt-5">
+                        <div class="text-center cf-title">Información de Pago
                         </div>
                     </div>
 
-                    <div class="cf-title">Información de Pago</div>
+                    <div class="cf-title my-3">Tarjeta de Credito / Debito <img src="img/mastercart.png"></div>
+
+                    <div class="panel">
+
+                        <div id="collapse1" class="collapse show" aria-labelledby="headingOne"
+                             data-parent="#accordion">
+
+                            <div class="panel-body">
+
+                                <!--MUESTRA LISTA DE METODOS DE PAGO DE USUARIO-->
+                                <table class="table">
+                                    <thead class="thead-light">
+
+                                    <tr>
+                                        <th scope="col">Tarjetas Disponibles</th>
+                                        <th scope="col">Operacion</th>
+                                    </tr>
+
+                                    </thead>
+
+                                    <tbody>
+
+                                    <tr>
+                                        <td>
+                                            <small>Mastercard ******6045</small>
+                                        </td>
+
+                                        <td>
+                                            <a href="#">Usar esta tarjeta</a>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <small>Visa ******5045</small>
+                                        </td>
+
+                                        <td>
+                                            <a href="#">Usar esta tarjeta</a>
+                                        </td>
+                                    </tr>
+
+                                    </tbody>
+
+                                </table>
 
 
-                    <div class="accordion-area mb-4" id="accordion">
+                                <!--formulario para tarjeta-->
+                                <img src="/img/creditcard.png">
 
-                        <div class="panel">
-                            <div class="panel-header" id="headingOne">
-                                <button class="panel-link active" data-toggle="collapse" data-target="#collapse1"
-                                        aria-expanded="true" aria-controls="collapse1">
-                                    Tarjeta de Credito / Debito <img src="img/mastercart.png">
-                                </button>
-                            </div>
+                                <div class="contact-form">
 
-                            <div id="collapse1" class="collapse show" aria-labelledby="headingOne"
-                                 data-parent="#accordion">
+                                    <div class="row">
 
-                                <div class="panel-body">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label-pago"> Tipo de Tarjeta</label>
+                                                <select name="tipotarjeta" class="form-control">
+                                                    <option value="1">Visa</option>
+                                                    <option value="2">MasterCard</option>
+                                                    <option value="3">Discover</option>
+                                                    <option value="4">American Express</option>
+                                                </select>
+                                            </div>
+                                        </div>
 
-                                    <!--MUESTRA LISTA DE METODOS DE PAGO DE USUARIO-->
-                                    <table class="table">
-                                        <thead class="thead-light">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label class="label-pago">Nombre Titular</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Nombre del Titular">
+                                            </div>
+                                        </div>
 
-                                        <tr>
-                                            <th scope="col">Tarjetas Disponibles</th>
-                                            <th scope="col">Operacion</th>
-                                        </tr>
-
-                                        </thead>
-
-                                        <tbody>
-
-                                        <tr>
-                                            <td>
-                                                <small>Mastercard ******6045</small>
-                                            </td>
-
-                                            <td>
-                                                <a href="#">Usar esta tarjeta</a>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>
-                                                <small>Visa ******5045</small>
-                                            </td>
-
-                                            <td>
-                                                <a href="#">Usar esta tarjeta</a>
-                                            </td>
-                                        </tr>
-
-                                        </tbody>
-
-                                    </table>
+                                    </div>
 
 
-                                    <!--formulario para tarjeta-->
-                                    <img src="/img/creditcard.png">
+                                    <div class="row">
 
-                                    <form>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label class="label-pago">Numero de Tarjeta</label>
+                                                <input type="text" class="form-control"
+                                                       placeholder="Numero de tarjeta"
+                                                       maxlength="19">
+                                            </div>
+                                        </div>
 
-                                        <div class="row">
 
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="label-pago"> Tipo de Tarjeta</label>
-                                                    <select name="tipotarjeta" class="form-control">
-                                                        <option value="1">Visa</option>
-                                                        <option value="2">MasterCard</option>
-                                                        <option value="3">Discover</option>
-                                                        <option value="4">American Express</option>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label class="label-pago">CVC</label>
+                                                <input type="text" class="form-control" placeholder="CVC"
+                                                       maxlength="3">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label class="label-pago"> Fecha de Expiracion</label>
+                                                <div class="d-flex justify-content-around">
+                                                    <select name="mes" class="form-control">
+                                                        <option value="" disabled selected>Mes</option>
+                                                        <option value="1">Enero</option>
+                                                        <option value="2">Febrero</option>
+                                                        <option value="3">Marzo</option>
+                                                        <option value="4">Abril</option>
+                                                        <option value="5">Mayo</option>
+                                                        <option value="6">Junio</option>
+                                                        <option value="7">Julio</option>
+                                                        <option value="8">Agosto</option>
+                                                        <option value="9">Septiembre</option>
+                                                        <option value="10">Octubre</option>
+                                                        <option value="11">Noviembre</option>
+                                                        <option value="12">Diciembre</option>
+                                                    </select>
+                                                    <select name="year" class="form-control">
+                                                        <option value="" disabled selected>Año</option>
+                                                        <option value="2021">2020</option>
+                                                        <option value="2020">2021</option>
+                                                        <option value="2022">2022</option>
+                                                        <option value="2023">2023</option>
+                                                        <option value="2024">2024</option>
+                                                        <option value="2025">2025</option>
+                                                        <option value="2026">2026</option>
                                                     </select>
                                                 </div>
-                                            </div>
 
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <label class="label-pago">Nombre Titular</label>
-                                                    <input type="text" class="form-control"
-                                                           placeholder="Nombre del Titular">
-                                                </div>
                                             </div>
-
                                         </div>
 
 
-                                        <div class="row">
-
-                                            <div class="col-md-5">
-                                                <div class="form-group">
-                                                    <label>Numero de Tajerta</label>
-                                                    <input type="text" class="form-control" placeholder="Numero de tarjeta"
-                                                    maxlength="19">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-3">
-                                                <div class="form-group">
-                                                    <label>CVC</label>
-                                                    <input type="text" class="form-control" placeholder="MM/YYYY"
-                                                           maxlength="7">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-4">
-                                                <div class="form-group">
-                                                    <label>Fecha de Expiracion</label>
-                                                    <input type="date" class="form-control" placeholder="Fecha de Expiración">
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-
-                                    </form>
+                                    </div>
 
 
                                 </div>
 
 
                             </div>
-                        </div>
 
+
+                        </div>
                     </div>
 
 
                     <button type="submit" class="site-btn submit-order-btn button">Enviar Orden</button>
-                </form>
-            </div>
+                </div>
 
 
-            <div class="col-lg-4 order-1 order-lg-2">
-                <div class="checkout-cart">
-                    <h3>Tu carrito</h3>
-                    <ul class="product-list">
-                        <li>
-                            <div class="pl-thumb"><img src="img/productos/thumbs/th_11.jpg"></div>
-                            <h6>Contactor Siemens</h6>
-                            <p>$45.000</p>
-                        </li>
-                        <li>
-                            <div class="pl-thumb"><img src="img/productos/thumbs/th_12.jpg"></div>
-                            <h6>Reductor de corriente</h6>
-                            <p>$25.000</p>
-                        </li>
-                    </ul>
-                    <ul class="price-list">
-                        <li>Total<span class="mr-5">$70.000</span></li>
-                        <li>Envio<span class="mr-5">Gratis</span></li>
-                        <li class="font-weight-bold">Total<span class="mr-5">$70.000</span></li>
-                    </ul>
+                <div class="col-lg-4 order-1 order-lg-2">
+                    <div class="checkout-cart">
+                        <h3>Tu carrito</h3>
+                        <ul class="product-list">
+                            <li>
+                                <div class="pl-thumb"><img src="img/productos/thumbs/th_11.jpg"></div>
+                                <h6>Contactor Siemens</h6>
+                                <p>$45.000</p>
+                            </li>
+                            <hr>
+                            <li>
+                                <div class="pl-thumb"><img src="img/productos/thumbs/th_12.jpg"></div>
+                                <h6>Reductor de corriente</h6>
+                                <p>$25.000</p>
+                            </li>
+                        </ul>
+                        <ul class="price-list">
+                            <li>Total<span class="mr-5">$70.000</span></li>
+                            <li>Envio<span class="mr-5">Gratis</span></li>
+                            <li class="font-weight-bold">Total<span class="mr-5">$70.000</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </form>
+
     </div>
 </section>
 <!-- checkout section end -->

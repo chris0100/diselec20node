@@ -1,0 +1,82 @@
+<section class="admin-section">
+
+    <div class="container">
+
+        <%- include('partials/menuAdmin.ejs') %>
+
+
+        <div class="text-center mt-5 mb-4">
+            <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
+                <h2 class="font-weight-bold sombra-texto">METODOS DE PAGO</h2>
+            </div>
+
+            <div>
+                <p class="sombra-texto">Revisa y modifica tus metodos de pago</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="panel">
+            <div class="panel-header">
+                <div class="mb-4">
+                    Tarjeta de Credito / Debito <img src="img/mastercart.png" class="img-fluid">
+                    <a href="/nuevo-metodo-pago" class="btn btn-outline-primary btn-sm float-right"><i class="fas fa-plus"></i> Añadir Tarjeta</a>
+                </div>
+
+            </div>
+
+
+            <div class="panel-body">
+
+                <!--MUESTRA LISTA DE METODOS DE PAGO DE USUARIO-->
+                <table class="table">
+                    <thead class="thead-light">
+
+                    <tr>
+                        <th scope="col">Tarjetas Disponibles</th>
+                        <th scope="col">Operacion</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            <small>Mastercard ******6045</small>
+                        </td>
+
+                        <td>
+                            <a href="/editar-metodo-pago" class="btn btn-outline-warning btn-sm">Editar</a>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Eliminar</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <small>Visa ******5045</small>
+                        </td>
+
+                        <td>
+                            <a href="/editar-metodo-pago" class="btn btn-outline-warning btn-sm">Editar</a>
+                            <a href="#" class="btn btn-outline-danger btn-sm">Eliminar</a>
+                        </td>
+                    </tr>
+
+                    </tbody>
+
+                </table>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+

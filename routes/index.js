@@ -49,6 +49,22 @@ module.exports = function(){
 
     router.get('/cambiar-password', adminController.cambiarPassword);
 
+    router.get('/imagen-perfil', adminController.imagenPerfil);
+
+    router.get('/ordenes', adminController.ordenes);
+
+    router.get('/detalle-orden', adminController.detalleOrden);
+
+    router.get('/direcciones', adminController.direcciones);
+
+    router.get('/pagos', adminController.pagos);
+
+    router.get('/nuevo-metodo-pago', adminController.nuevoMetodoPago);
+
+    router.get('/editar-metodo-pago', adminController.nuevoMetodoPago);
+
+
+
 
     return router;
 };

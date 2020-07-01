@@ -1,0 +1,131 @@
+<section class="admin-section">
+
+    <div class="container">
+
+        <%- include('partials/menuAdmin.ejs') %>
+
+
+        <div class="text-center mt-5 mb-4">
+            <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
+                <h2 class="font-weight-bold sombra-texto">NUEVO METODO DE PAGO</h2>
+            </div>
+
+            <div>
+                <p class="sombra-texto">Edita tus metodos de pago de forma segura</p>
+            </div>
+
+            <div class="site-pagination text-left">
+                <a href="/pagos" class="nav-link"><i class="fas fa-arrow-left"></i> Atras</a>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <img src="/img/creditcard.png">
+
+        <form class="contact-form" method="post">
+
+
+
+            <div class="row">
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label-pago"> Tipo de Tarjeta</label>
+                        <select name="tipotarjeta" class="form-control">
+                            <option value="1">Visa</option>
+                            <option value="2">MasterCard</option>
+                            <option value="3">Discover</option>
+                            <option value="4">American Express</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="label-pago">Nombre Titular</label>
+                        <input type="text" class="form-control"
+                               placeholder="Nombre del Titular">
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label class="label-pago">Numero de Tarjeta</label>
+                        <input type="text" class="form-control"
+                               placeholder="Numero de tarjeta"
+                               maxlength="19">
+                    </div>
+                </div>
+
+
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label class="label-pago">CVC</label>
+                        <input type="text" class="form-control" placeholder="CVC"
+                               maxlength="3">
+                    </div>
+                </div>
+
+
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label class="label-pago"> Fecha de Expiracion</label>
+                        <div class="d-flex justify-content-around">
+                            <select name="mes" class="form-control">
+                                <option value="" disabled selected>Mes</option>
+                                <option value="1">Enero</option>
+                                <option value="2">Febrero</option>
+                                <option value="3">Marzo</option>
+                                <option value="4">Abril</option>
+                                <option value="5">Mayo</option>
+                                <option value="6">Junio</option>
+                                <option value="7">Julio</option>
+                                <option value="8">Agosto</option>
+                                <option value="9">Septiembre</option>
+                                <option value="10">Octubre</option>
+                                <option value="11">Noviembre</option>
+                                <option value="12">Diciembre</option>
+                            </select>
+                            <select name="year" class="form-control">
+                                <option value="" disabled selected>Año</option>
+                                <option value="2021">2020</option>
+                                <option value="2020">2021</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <hr>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="site-btn submit-order-btn button w-50">Guardar</button>
+            </div>
+
+
+
+        </form>
+
+
+
+
+
+    </div>
+
+
+</section>
