@@ -777,8 +777,7 @@ hr {
   border-bottom: 3px solid #0072ff;
   box-shadow: 0px 5px 13px 0px rgba(0, 114, 255, 0.67); }
 
-.navbar {
-  padding: 0.7rem 0 0.7rem 0; }
+
 
 .header-ppal {
   background-image: linear-gradient(to right bottom, rgba(0, 114, 255, 0.5), rgba(40, 180, 133, 0.6)), url(../img/portada-ppal3.jpg);
@@ -790,9 +789,24 @@ hr {
   transition: all 1s ease;
   padding: 0; }
 
+.bg-info{
+  transition: all 1s ease;
+  padding: 0;
+}
+
 .return-bg-primary {
   transition: all 1s ease;
   background-color: rgba(29, 129, 253, 0.85); }
+
+.move-super--menu{
+  transition: all 1s ease;
+  margin-top: -20px;
+}
+
+.return-super--menu{
+  transition: all 1s ease;
+  margin-top: 0;
+}
 
 .heading-ppal__box {
   height: 100vh; }
@@ -801,11 +815,7 @@ hr {
   width: 70%;
   height: auto; }
 
-.navbar-brand {
-  padding: 0; }
 
-.navbar a {
-  padding: 0; }
 
 .icon-show__box {
   margin-top: 17rem;
@@ -3496,7 +3506,23 @@ ADMIN SECTION******
 
 }
 
+.super-section{
+  padding-top: 125px;
+  padding-bottom: 250px;
+}
 
+.item-menu-super:hover{
+  font-weight: bold;
+}
+
+
+.fixed-top-admin {
+  position: fixed;
+  top: 120px;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
 
 
 

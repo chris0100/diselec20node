@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d26800-42b6-45b0-b4b6-854d950ba747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/superController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/superusuario/panelSuper.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/super.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/superusuario/cambiarPasswordSuper.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/superusuario/partials/menuSuper.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/superController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/superController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/crearCuenta.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/crearCuenta.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/detalleOrden.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/detalleOrden.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/layout.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layout.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/ordenes.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/ordenes.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/menuAdmin.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/menuAdmin.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/superusuario/panelSuper.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/superusuario/panelSuper.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,46 +49,40 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\.idea" />
-      </set>
-    </option>
-  </component>
   <component name="ProjectId" id="1dxN2pRISKMO44VzWjhbGmK5UGy" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\img" />
-      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\js" />
-      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\img\productos" />
-      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\views" />
       <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\js" />
       <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\css" />
       <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\img" />
       <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\img\productos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\img" />
+      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\js" />
+      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\img\productos" />
+      <recent name="C:\Users\Alexis Rodriguez\Escritorio\DATOS JAVASCRIPT\CURSO NODEJS\diselec\public\css" />
     </key>
   </component>
   <component name="RunManager">
@@ -103,11 +118,23 @@
       <workItem from="1593366141056" duration="26554000" />
       <workItem from="1593441597531" duration="34701000" />
       <workItem from="1593522764568" duration="37536000" />
+      <workItem from="1593615281029" duration="6230000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -125,22 +152,26 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1230" y="269" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593381780582" />
-    <state width="1899" height="110" key="GridCell.Tab.0.bottom" timestamp="1593578394315">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="76" key="GridCell.Tab.0.bottom" timestamp="1593616323611">
+      <screen x="0" y="22" width="1280" height="778" />
     </state>
     <state width="1899" height="110" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593578394315" />
-    <state width="1899" height="110" key="GridCell.Tab.0.center" timestamp="1593578394315">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="76" key="GridCell.Tab.0.bottom/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323611" />
+    <state width="1259" height="76" key="GridCell.Tab.0.center" timestamp="1593616323609">
+      <screen x="0" y="22" width="1280" height="778" />
     </state>
     <state width="1899" height="110" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593578394315" />
-    <state width="1899" height="110" key="GridCell.Tab.0.left" timestamp="1593578394315">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="76" key="GridCell.Tab.0.center/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323609" />
+    <state width="1259" height="76" key="GridCell.Tab.0.left" timestamp="1593616323609">
+      <screen x="0" y="22" width="1280" height="778" />
     </state>
     <state width="1899" height="110" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593578394315" />
-    <state width="1899" height="110" key="GridCell.Tab.0.right" timestamp="1593578394315">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="76" key="GridCell.Tab.0.left/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323609" />
+    <state width="1259" height="76" key="GridCell.Tab.0.right" timestamp="1593616323610">
+      <screen x="0" y="22" width="1280" height="778" />
     </state>
     <state width="1899" height="110" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593578394315" />
+    <state width="1259" height="76" key="GridCell.Tab.0.right/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323610" />
     <state x="-1457" y="165" key="SettingsEditor" timestamp="1593555029248">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

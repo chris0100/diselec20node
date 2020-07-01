@@ -35,9 +35,6 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.material.min.css">
 
 
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
 
 
 
@@ -99,8 +96,8 @@
     </div>
 
     <div>
-        <div class="mr-5 d-flex mb-3"><i class="fas fa-user text-white mr-2"></i><a href="/login" class="nav-link"><small>Iniciar Sesión</small></a></div>
-        <div class="mr-5 d-flex"><i class="fas fa-edit text-white mr-2"></i><a href="/crear-cuenta" class="nav-link"><small>Crear Cuenta</small></a></div>
+        <div class="mr-5 d-flex mb-3 align-items-center"><i class="fas fa-user text-white mr-2"></i><a href="/login" class="nav-link"><small>Iniciar Sesión</small></a></div>
+        <div class="mr-5 d-flex align-items-center"><i class="fas fa-edit text-white mr-2"></i><a href="/crear-cuenta" class="nav-link"><small>Crear Cuenta</small></a></div>
     </div>
 
 </nav>
@@ -231,9 +228,6 @@
 
 
 
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
 
 <!--para obtener el año actualizado de copyright-->
 <script>
@@ -246,11 +240,17 @@
     $(window).scroll(function () {
         if ($("#menu").offset().top > 56) {
             $("#menu").addClass("bg-primary");
+            $("#menu2").addClass("move-super--menu");
+            console.log('normal');
         } else {
             $("#menu").addClass("return-bg-primary");
             $("#menu").removeClass("bg-primary");
+
+            console.log('con la barra grande si pasa');
         }
     });
+
+
 
     //tooltips
     $(function () {
