@@ -4,7 +4,7 @@ const router = express.Router();
 //Define los controladores a utilizar
 const homeController = require('../controllers/homeController');
 const adminController = require('../controllers/adminController');
-
+const superController = require('../controllers/superController');
 
 
 
@@ -64,6 +64,9 @@ module.exports = function(){
     router.get('/editar-metodo-pago', adminController.nuevoMetodoPago);
 
 
+    //**********************************************************
+    //***************  SUPER USUARIO ***************************
+    router.get('/panel-super', superController.panelSuper);
 
 
     return router;
