@@ -1,0 +1,224 @@
+<section class="admin-section">
+
+    <%- include('partials/menuSuper.ejs') %>
+
+    <div class="container">
+
+
+        <div class="text-center mt-5 mb-1 checkout-cart">
+
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb site-pagination">
+                    <li class="breadcrumb-item"><a href="/panel-super">Panel</a></li>
+                    <li class="breadcrumb-item"><a href="/panel-super/clientes">Clientes</a></li>
+                    <li class="breadcrumb-item"><a href="/panel-super/clientes/ordenes"> Ordenes</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Detalle Orden</li>
+                </ol>
+            </nav>
+
+
+            <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
+                <h2 class="font-weight-bold sombra-texto">ORDEN DE COMPRA # <span>02154</span></h2>
+            </div>
+
+
+            <div>
+                <p>Orden generada el 25/02/2020</p>
+            </div>
+
+
+            <div class="text-left checkout-form">
+                <div class="text-center cf-title" style="margin-bottom: 20px!important;">Información del Cliente</div>
+
+                <div class="row my-2 d-flex justify-content-around">
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Fecha de compra:</label>
+                        <p>25 de Junio de 2020 9:30 pm</p>
+                    </col-sm-3>
+
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Nombre del Cliente:</label>
+                        <p>Christian Alexis Rodriguez</p>
+                    </col-sm-3>
+
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Email:</label>
+                        <p>alexroguez59@gmail.com</p>
+                    </col-sm-3>
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Telefono:</label>
+                        <p>300 344 39 01</p>
+                    </col-sm-3>
+                </div>
+
+
+                <hr>
+
+                <div class="text-center cf-title" style="margin-bottom: 20px!important;">Información de Envio /
+                    Facturación
+                </div>
+
+                <div class="row my-2 d-flex justify-content-around">
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Pais:</label>
+                        <p>Colombia</p>
+                    </col-sm-3>
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Departamento:</label>
+                        <p>Valle del Cauca</p>
+                    </col-sm-3>
+
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Ciudad:</label>
+                        <p>Cali</p>
+                    </col-sm-3>
+
+
+                    <col-sm-3 class="mx-4">
+                        <label class="label-pago">Dirección:</label>
+                        <p>Calle 55bn # 2f-59</p>
+                    </col-sm-3>
+
+                </div>
+
+
+                <table class="table table-striped">
+                    <thead>
+                    <th>Tipo de Entrega</th>
+                    <th>Fecha de Entrega</th>
+                    <th>Tiempo Estimado</th>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label>Estandar</label>
+                        </td>
+                        <td>
+                            <label>25/02/2020</label>
+                        </td>
+                        <td>
+                            <label><span>25</span> dias</label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <hr>
+
+
+                <div class="text-center cf-title" style="margin-bottom: 20px!important;">Información de Pago</div>
+
+
+                <table class="table">
+                    <thead class="thead-light">
+
+                    <tr>
+                        <th scope="col">Tarjeta Debito/Credito <img src="/img/creditcard.png"></th>
+                        <th scope="col"></th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    <tr>
+                        <td>
+                            <label class="label-pago text-primary">Mastercard ******6045</label>
+                        </td>
+
+                        <td>
+                            <label class="label-pago text-primary">Usaste esta tarjeta</label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+                <hr>
+
+
+                <div class="text-center cf-title" style="margin-bottom: 20px!important;">Información de la compra</div>
+
+                <p >A continuación se detallan los productos adquiridos:</p>
+
+                <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Transistor</td>
+                        <td>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</td>
+                        <td>$ 12.000</td>
+                        <td>2</td>
+                        <td>$ 24.000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Resistencia</td>
+                        <td>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</td>
+                        <td>$ 12.000</td>
+                        <td>2</td>
+                        <td>$ 24.000</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Conversor</td>
+                        <td>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</td>
+                        <td>$ 12.000</td>
+                        <td>2</td>
+                        <td>$ 24.000</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <table class="ml-auto table-striped">
+                    <tbody>
+                    <tr>
+                        <td class="text-left" width="150px">Sub Total:</td>
+                        <td class="text-right">$ 150.000</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">Impuesto:</td>
+                        <td class="text-right">$ 0</td>
+                    </tr>
+
+                    <tr>
+                        <td class="text-left">Valor Total:</td>
+                        <td class="text-right">$ 150.000</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div class="text-center mt-5">
+                    <small>Gracias por tu compra, recuerda presentar tu orden de compra para reclamar los productos
+                        adquiridos. Si deseas imprimir haz clic en el siguiente boton <a href="#"><i class="fas fa-print fa-2x"></i></a></small>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</section>

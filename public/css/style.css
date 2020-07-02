@@ -85,7 +85,7 @@ body {
   /*font-family: 'Ubuntu', sans-serif;*/
   height: 100%;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
   color: #2e2e2e; }
@@ -805,7 +805,7 @@ hr {
 
 .return-super--menu{
   transition: all 1s ease;
-  margin-top: 0;
+  margin-top: 20px;
 }
 
 .heading-ppal__box {
@@ -815,6 +815,17 @@ hr {
   width: 70%;
   height: auto; }
 
+.mdc-data-table__cell{
+ font-size: 14px!important;
+}
+
+.mdc-cell{
+  font-size: 14px!important;
+}
+
+.mdc-button{
+  font-size: 14px!important;
+}
 
 
 .icon-show__box {
@@ -921,11 +932,20 @@ hr {
 
 
 .bg-reparacion {
-  background-image: linear-gradient(to right bottom, rgb(254, 255, 253), rgba(221, 245, 231, 0.86)), url(./../../img/portada-ppal5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(254, 255, 253, 0.79), rgba(221, 245, 231, 0.86)), url(./../../img/portada-ppal5.jpg);
   background-size: cover;
   margin: 7rem 0 7rem 0;
   padding: 9rem 0 9rem 0;
   clip-path: polygon(0 10%, 100% 20%, 100% 100%, 0 90%);
+}
+
+
+.bg-soporte{
+  background-image: linear-gradient(to right bottom, rgba(246, 255, 244, 0.78), rgba(238, 245, 228, 0.89)), url(./../../img/portada-ppal8.jpg);
+  background-size: cover;
+  margin: 11rem 0 7rem 0;
+  padding: 9rem 0 9rem 0;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 }
 
 
@@ -944,7 +964,7 @@ hr {
   text-decoration: none;
   /* ahora configuramos el padding para el top y el bottom */
   padding: 1rem .3rem;
-  margin: 0 3px;
+  margin: 0 10px;
   display: inline-block;
   /*establece un bloque de espacio con amplio margen para editar*/
   /* se centra el texto a traves de el text align usado en textbox para que el padre centre todo lo que tiene inmerso. */
@@ -3509,6 +3529,10 @@ ADMIN SECTION******
 .super-section{
   padding-top: 125px;
   padding-bottom: 250px;
+}
+
+.item-menu-super{
+  font-size: 12px!important;
 }
 
 .item-menu-super:hover{

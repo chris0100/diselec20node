@@ -61,12 +61,26 @@ module.exports = function(){
 
     router.get('/nuevo-metodo-pago', adminController.nuevoMetodoPago);
 
-    router.get('/editar-metodo-pago', adminController.nuevoMetodoPago);
+    router.get('/editar-metodo-pago', adminController.editarMetodoPago);
 
 
     //**********************************************************
     //***************  SUPER USUARIO ***************************
     router.get('/panel-super', superController.panelSuper);
+
+    router.get('/panel-super/cambiar-password', superController.cambiarPassword);
+
+    router.get('/panel-super/productos', superController.productos);
+
+    router.get('/panel-super/nuevo-producto', superController.nuevoProducto);
+
+    router.get('/panel-super/clientes', superController.clientes);
+
+    router.get('/panel-super/clientes/ordenes', superController.ordenes);
+
+    router.get('/panel-super/clientes/detalle-orden', superController.detalleOrden);
+
+    router.get('/panel-super/informes', superController.informes);
 
 
     return router;

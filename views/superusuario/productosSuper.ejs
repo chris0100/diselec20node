@@ -1,0 +1,125 @@
+
+
+<section class="super-section">
+
+
+    <%- include('partials/menuSuper.ejs') %>
+
+
+
+    <div class="container">
+
+        <div class="text-center"  style="margin-top: 100px">
+            <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
+                <h2 class="font-weight-bold sombra-texto">PRODUCTOS</h2>
+            </div>
+
+            <div>
+                <p class="sombra-texto">Realiza los cambios pertinentes en tu inventario</p>
+            </div>
+        </div>
+
+
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb site-pagination">
+                <li class="breadcrumb-item"> <a href="/panel-super">Panel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Productos</li>
+            </ol>
+        </nav>
+
+        <hr>
+
+
+        <div class="mb-4 text-right">
+            <a href="/panel-super/nuevo-producto" class="btn btn-outline-primary btn-sm"><i class="fas fa-plus"></i> Añadir Producto</a>
+        </div>
+
+
+        <div class="d-flex justify-content-center">
+            <table id="example" class="mdl-data-table" style="min-width:100%;">
+                <thead style="background-color: rgb(65,139,202);color: white">
+                <tr>
+                    <th class="text-white">Codigo</th>
+                    <th class="text-white">Producto</th>
+                    <th class="text-white">Stock</th>
+                    <th class="text-white">Precio de Compra</th>
+                    <th class="text-white">Precio de Venta</th>
+                    <th class="text-white">Utilidad</th>
+                    <th class="text-white">Estado</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>240858</td>
+                    <td>Transistor</td>
+                    <td>14</td>
+                    <td>$ 25.000</td>
+                    <td>$ 30.000</td>
+                    <td>$ 5.000</td>
+                    <td>Activo</td>
+                    <td class="text-center">
+                        <a href="/panel-super/nuevo-producto" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <span class="ml-3"></span>
+                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="Inactivar">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>240858</td>
+                    <td>Transistor</td>
+                    <td>14</td>
+                    <td>$ 25.000</td>
+                    <td>$ 30.000</td>
+                    <td>$ 5.000</td>
+                    <td>Activo</td>
+                    <td class="text-center">
+                        <a href="/panel-super/nuevo-producto" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <span class="ml-3"></span>
+                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="Inactivar">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>240858</td>
+                    <td>Transistor</td>
+                    <td>14</td>
+                    <td>$ 25.000</td>
+                    <td>$ 30.000</td>
+                    <td>$ 5.000</td>
+                    <td>Activo</td>
+                    <td class="text-center">
+                        <a href="/panel-super/nuevo-producto" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fas fa-edit"></i>
+                        </a>
+                        <span class="ml-3"></span>
+                        <a href="#" class="text-danger" data-toggle="tooltip" data-placement="top" title="Inactivar">
+                            <i class="fas fa-trash-alt"></i>
+                        </a>
+                    </td>
+                </tr>
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+
+

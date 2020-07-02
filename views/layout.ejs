@@ -86,7 +86,7 @@
             <ul class="navbar-nav ml-auto animated zoomIn delay-.1s">
 
                 <li class="nav-item active">
-                    <a href="/" class="nav-link"><i class="fas fa-home"></i> Inicio</a>
+                    <a href="/" class="nav-link"><i class="fas fa-home"></i> <small>Inicio</small></a>
                 </li>
 
                 <%- include('partials/navegacion-normal.ejs') %>
@@ -96,8 +96,8 @@
     </div>
 
     <div>
-        <div class="mr-5 d-flex mb-3 align-items-center"><i class="fas fa-user text-white mr-2"></i><a href="/login" class="nav-link"><small>Iniciar Sesión</small></a></div>
-        <div class="mr-5 d-flex align-items-center"><i class="fas fa-edit text-white mr-2"></i><a href="/crear-cuenta" class="nav-link"><small>Crear Cuenta</small></a></div>
+        <div class="mr-5 d-flex mb-3 align-items-center"><i class="fas fa-user text-white"></i><a href="/login" class="nav-link"><small>Iniciar Sesión</small></a></div>
+        <div class="mr-5 d-flex align-items-center"><i class="fas fa-user-plus text-white"></i><a href="/crear-cuenta" class="nav-link"><small>Crear Cuenta</small></a></div>
     </div>
 
 </nav>
@@ -233,6 +233,14 @@
 <script>
     // Get the current year for the copyright
     $("#year").text(new Date().getFullYear());
+
+
+    //colocar la fecha Actual en el date de informes
+    const now = new Date()
+    let day = ("0" + now.getDate()).slice(-2);
+    let month = ("0" + (now.getMonth() + 1)).slice(-2);
+    document.querySelector('.fechaInicio').value = now.getFullYear() + '-'+ month + '-' + day;
+
 </script>
 
 <!--para cambio de color en navbar-->
@@ -245,7 +253,7 @@
         } else {
             $("#menu").addClass("return-bg-primary");
             $("#menu").removeClass("bg-primary");
-
+            $("#menu2").removeClass("move-super--menu");
             console.log('con la barra grande si pasa');
         }
     });

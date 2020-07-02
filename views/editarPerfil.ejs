@@ -10,26 +10,36 @@
             </div>
         </div>
 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb site-pagination">
+                <li class="breadcrumb-item"> <a href="/admin">Panel</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Editar Perfil</li>
+            </ol>
+        </nav>
+
+
+        <hr>
+
 
         <form class="contact-form">
 
             <div class="campo d-flex justify-content-center align-items-center" >
-                <label>Nombre</label>
+                <label class="label-pago">Nombre</label>
                 <input type="text" placeholder="Tu Nombre" name="nombre" class="form__input w-75" >
             </div>
 
             <div class="campo d-flex justify-content-center align-items-center">
-                <label>Email</label>
+                <label class="label-pago">Email</label>
                 <input type="email" placeholder="Tu Email" name="email" class="form__input w-75"  >
             </div>
 
             <div class="campo d-flex justify-content-center align-items-center" >
-                <label>Telefono</label>
+                <label class="label-pago">Telefono</label>
                 <input type="text" placeholder="Tu Telefono" name="telefono" class="form__input w-75"  >
             </div>
 
             <div class="campo descripcion d-flex justify-content-center align-items-center">
-                <label>Quien soy</label>
+                <label class="label-pago">Quien soy</label>
                 <div class="form__input w-75">
                     <input type="hidden" id="x" name="descripcion">
                     <trix-editor input="x"></trix-editor>

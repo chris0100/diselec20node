@@ -83,7 +83,7 @@ exports.nuevoMetodoPago = (req,res) => {
 
 
 //EDITAR METODO DE PAGO
-exports.nuevoMetodoPago = (req,res) => {
+exports.editarMetodoPago = (req,res) => {
 
     res.render('editarMetodoPago', {
         nombrePagina: 'Editar Metodo de Pago'
