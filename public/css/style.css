@@ -410,7 +410,7 @@ select.form-control:focus{
   background-color: rgba(255, 255, 255, 0.6); }
 
 .recuadro-ppal{
-  background-color: rgba(52, 52, 52, 0.72);
+  background-color: rgba(32, 32, 32, 0.77);
   padding: 1rem;
   border-radius: 5%;
 }
@@ -3554,6 +3554,41 @@ ADMIN SECTION******
 
 
 
+
+
+
+
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... ) SCROLL
+
+
+
+.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width:0
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 0;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid transparent;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 1px;
+}
+
+*/
 
 
 
