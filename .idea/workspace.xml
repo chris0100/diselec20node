@@ -20,12 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5d26800-42b6-45b0-b4b6-854d950ba747" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/models/Productos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/superController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/superController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.16.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/views" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -116,24 +110,24 @@
       <workItem from="1593522764568" duration="37536000" />
       <workItem from="1593615281029" duration="6230000" />
       <workItem from="1593623625784" duration="26243000" />
+      <workItem from="1593658923461" duration="100000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -155,25 +149,29 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1181" y="261" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593642128645" />
-    <state width="1899" height="112" key="GridCell.Tab.0.bottom" timestamp="1593658003428">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="68" key="GridCell.Tab.0.bottom" timestamp="1593659036517">
+      <screen x="0" y="22" width="1280" height="726" />
     </state>
     <state width="1899" height="112" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593658003428" />
+    <state width="1259" height="68" key="GridCell.Tab.0.bottom/0.22.1280.726@0.22.1280.726" timestamp="1593659036517" />
     <state width="1259" height="76" key="GridCell.Tab.0.bottom/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323611" />
-    <state width="1899" height="112" key="GridCell.Tab.0.center" timestamp="1593658003428">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="68" key="GridCell.Tab.0.center" timestamp="1593659036516">
+      <screen x="0" y="22" width="1280" height="726" />
     </state>
     <state width="1899" height="112" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593658003428" />
+    <state width="1259" height="68" key="GridCell.Tab.0.center/0.22.1280.726@0.22.1280.726" timestamp="1593659036516" />
     <state width="1259" height="76" key="GridCell.Tab.0.center/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323609" />
-    <state width="1899" height="112" key="GridCell.Tab.0.left" timestamp="1593658003428">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="68" key="GridCell.Tab.0.left" timestamp="1593659036516">
+      <screen x="0" y="22" width="1280" height="726" />
     </state>
     <state width="1899" height="112" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593658003428" />
+    <state width="1259" height="68" key="GridCell.Tab.0.left/0.22.1280.726@0.22.1280.726" timestamp="1593659036516" />
     <state width="1259" height="76" key="GridCell.Tab.0.left/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323609" />
-    <state width="1899" height="112" key="GridCell.Tab.0.right" timestamp="1593658003428">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state width="1259" height="68" key="GridCell.Tab.0.right" timestamp="1593659036517">
+      <screen x="0" y="22" width="1280" height="726" />
     </state>
     <state width="1899" height="112" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1593658003428" />
+    <state width="1259" height="68" key="GridCell.Tab.0.right/0.22.1280.726@0.22.1280.726" timestamp="1593659036517" />
     <state width="1259" height="76" key="GridCell.Tab.0.right/1280.22.1920.1006/0.22.1280.778@0.22.1280.778" timestamp="1593616323610" />
     <state x="-1457" y="165" key="SettingsEditor" timestamp="1593634305133">
       <screen x="-1920" y="0" width="1920" height="1040" />

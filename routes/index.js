@@ -70,6 +70,8 @@ module.exports = function(){
 
     //**********************************************************
     //***************  SUPER USUARIO ***************************
+    //**********************************************************
+
 
     //VER PANEL DE SUPER USUARIO
     router.get('/panel-super', superController.panelSuper);
