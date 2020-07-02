@@ -64,22 +64,49 @@ module.exports = function(){
     router.get('/editar-metodo-pago', adminController.editarMetodoPago);
 
 
+
+
+
+
     //**********************************************************
     //***************  SUPER USUARIO ***************************
+
+    //VER PANEL DE SUPER USUARIO
     router.get('/panel-super', superController.panelSuper);
 
+
+    //VER PANEL DE CAMBIAR CONTRASEÑA
     router.get('/panel-super/cambiar-password', superController.cambiarPassword);
 
+
+
+
+    //**********************************************************
+    //VER PANEL DE PRODUCTOS
     router.get('/panel-super/productos', superController.productos);
 
+    //VER PANEL NUEVO PRODUCTO
     router.get('/panel-super/nuevo-producto', superController.nuevoProducto);
 
+
+
+
+    //**********************************************************
+    //VER PANEL DE CLIENTES
     router.get('/panel-super/clientes', superController.clientes);
 
+    //VER ORDENES DE CLIENTES
     router.get('/panel-super/clientes/ordenes', superController.ordenes);
 
+    //VER DETALLE DE ORDENES DE CLIENTE
     router.get('/panel-super/clientes/detalle-orden', superController.detalleOrden);
 
+
+
+
+    
+    //**********************************************************
+    //VER PANEL DE INFORMES
     router.get('/panel-super/informes', superController.informes);
 
 

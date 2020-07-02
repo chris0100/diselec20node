@@ -1,5 +1,7 @@
 
-
+//****************************************************
+    //*************************PANEL PRINCIPAL*******************
+//*****************************************************
 
 //GET - PANEL SUPERUSUARIO
 exports.panelSuper = (req, res) => {
@@ -10,7 +12,13 @@ exports.panelSuper = (req, res) => {
 };
 
 
-//GET - CAMBIAR CONTRASEÑA
+
+
+//****************************************************
+//*************************PASSWORD*******************
+//*****************************************************
+
+//GET - CAMBIAR PASSWORD
 exports.cambiarPassword = (req, res) => {
 
     res.render('superusuario/cambiarPasswordSuper', {
@@ -18,6 +26,14 @@ exports.cambiarPassword = (req, res) => {
     })
 };
 
+
+
+
+
+
+//****************************************************
+//*************************PRODUCTOS*******************
+//*****************************************************
 
 //GET - VER PANEL DE PRODUCTOS
 exports.productos = (req, res) => {
@@ -36,6 +52,22 @@ exports.nuevoProducto = (req, res) => {
 };
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+//****************************************************
+//*************************CLIENTES*******************
+//*****************************************************
+
 //GET - VER PANEL DE CLIENTES
 exports.clientes = (req, res) => {
 
@@ -44,7 +76,8 @@ exports.clientes = (req, res) => {
     })
 };
 
-//GET - VER PANEL DE CLIENTES
+
+//GET - VER ORDENES DE CLIENTES
 exports.ordenes = (req, res) => {
 
     res.render('superusuario/ordenesSuper', {
@@ -52,7 +85,9 @@ exports.ordenes = (req, res) => {
     })
 };
 
-//GET - VER PANEL DE CLIENTES
+
+
+//GET - VER DETALLE DE ORDENES DE CLIENTES
 exports.detalleOrden = (req, res) => {
 
     res.render('superusuario/detalleOrdenSuper', {
@@ -60,6 +95,12 @@ exports.detalleOrden = (req, res) => {
     })
 };
 
+
+
+
+//****************************************************
+//*************************INFORMES*******************
+//*****************************************************
 
 //GET - VER PANEL DE INFORMES
 exports.informes = (req, res) => {
