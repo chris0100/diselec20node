@@ -4,12 +4,12 @@
     <%- include('partials/menuSuper.ejs') %>
 
 
-    <div class="container" style="transition: all 1s ease;">
+    <div class="container">
 
 
         <div class="text-center mb-4" style="margin-top: 100px">
             <div class="section-title" style="color: #1e29a4;animation: 5s infinite pulse;">
-                <h2 class="font-weight-bold sombra-texto">NUEVO PRODUCTO</h2>
+                <h2 class="font-weight-bold sombra-texto">EDITAR PRODUCTO</h2>
             </div>
 
             <div>
@@ -28,16 +28,18 @@
         <hr>
 
 
-        <form class="contact-form" method="post" action="/panel-super/nuevo-producto">
+        <form class="contact-form" method="post" action="/panel-super/editar-producto/<%= producto.id %>">
 
 
             <div class="row">
+
+              <!--  <input type="hidden" name="id" value="// //producto.id//"> sirve para no tomar datos de la url -->
 
                 <div class="col-md-3">
                     <div class="form-group">
                         <label class="label-pago">Codigo</label>
                         <input type="text" class="form-control"
-                               placeholder="Codigo" min="0" maxlength="6" name="codigo">
+                               placeholder="Codigo" min="0" maxlength="6" name="codigo" value="<%= producto.codigo %>">
                     </div>
                 </div>
 
@@ -46,9 +48,13 @@
                         <label class="label-pago"> Categoría</label>
                         <select name="categoria" class="form-control">
 
-                            <option value="" selected disabled>Seleccionar</option>
-                            <% categorias.forEach(categoria => {%>
-                                <option value="<%= categoria.id%>"><%= categoria.nombre %></option>
+                            <% categorias.forEach(categoria => { %>
+
+                            <option value="<%= categoria.id %>"
+                                <%= (producto.categoriaId === categoria.id) ? 'selected' : '' %>>
+                                <%= categoria.nombre %>
+                            </option>
+
                             <% }) %>
 
                         </select>
@@ -59,7 +65,7 @@
                     <div class="form-group">
                         <label class="label-pago">Nombre</label>
                         <input type="text" class="form-control"
-                               placeholder="Nombre del Producto" name="nombre">
+                               placeholder="Nombre del Producto" name="nombre" value="<%= producto.nombre %>">
                     </div>
                 </div>
 
@@ -73,7 +79,7 @@
                     <div class="form-group">
                         <label class="label-pago">Cantidad</label>
                         <input type="number" class="form-control"
-                               placeholder="Cantidad" min="0" name="cantidad">
+                               placeholder="Cantidad" min="0" name="cantidad" value="<%= producto.cantidad %>">
                     </div>
                 </div>
 
@@ -82,7 +88,7 @@
                     <div class="form-group">
                         <label class="label-pago">Precio de Compra ( $ )</label>
                         <input type="number" class="form-control"
-                               placeholder="Precio de Compra" min="0" name="precioCompra">
+                               placeholder="Precio de Compra" min="0" name="precioCompra" value="<%= producto.precioCompra %>">
                     </div>
                 </div>
 
@@ -90,7 +96,7 @@
                     <div class="form-group">
                         <label class="label-pago">Precio de Venta ( $ )</label>
                         <input type="number" class="form-control"
-                               placeholder="Precio de Venta" min="0" name="precioVenta">
+                               placeholder="Precio de Venta" min="0" name="precioVenta" value="<%= producto.precioVenta %>">
                     </div>
                 </div>
 
@@ -99,8 +105,8 @@
                     <div class="form-group">
                         <label class="label-pago">Estado</label>
                         <select name="estado" class="form-control">
-                            <option value="Activo" selected>Activo</option>
-                            <option value="Inactivo">Inactivo</option>
+                            <option value="Activo" <%= (producto.estado === 'Activo') ? 'selected' : '' %>>Activo</option>
+                            <option value="Inactivo" <%= (producto.estado === 'Inactivo') ? 'selected' : '' %>>Inactivo</option>
 
                         </select>
                     </div>
@@ -111,7 +117,7 @@
                     <div class="form-group">
                         <label class="label-pago">Descripción</label>
                         <div style="border-radius: 25px;font-size: 0.8rem">
-                            <input type="hidden" id="x" name="descripcion">
+                            <input type="hidden" id="x" name="descripcion" value="<%= producto.descripcion %>">
                             <trix-editor input="x"></trix-editor>
                         </div>
                     </div>

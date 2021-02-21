@@ -3,6 +3,7 @@ const db = require('../config/db');
 const uuid = require('uuid/v4');
 const slug = require('slug');
 const shortid = require('shortid');
+const Categorias = require('./Categorias');
 
 
 const Productos = db.define('productos', {
@@ -17,15 +18,6 @@ const Productos = db.define('productos', {
             validate: {
                 notEmpty: {
                     msg: 'El codigo debe tener 6 caracteres'
-                }
-            }
-        },
-        categoria: {
-            type: Sequelize.TEXT(50),
-            allowNull: false,
-            validate: {
-                notEmpty: {
-                    msg: 'Debe seleccionar al menos una categoria'
                 }
             }
         },
@@ -88,9 +80,18 @@ const Productos = db.define('productos', {
             async beforeCreate(productos) {
                 const url = slug(productos.nombre).toLowerCase();
                 productos.slug = `${url}-${shortid.generate()}`;
+            },
+            async beforeUpdate(productos){
+                const url = slug(productos.nombre).toLowerCase();
+                productos.slug = `${url}-${shortid.generate()}`;
             }
         }
     });
+
+
+
+//relacion de que cada producto tendra por lo menos una categoria
+Productos.belongsTo(Categorias);
 
 
 module.exports = Productos;

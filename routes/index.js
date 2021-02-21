@@ -88,7 +88,20 @@ module.exports = function(){
     router.get('/panel-super/productos', superController.productos);
 
     //VER PANEL NUEVO PRODUCTO
-    router.get('/panel-super/nuevo-producto', superController.nuevoProducto);
+    router.get('/panel-super/nuevo-producto', superController.formNuevoProducto);
+
+    //POST GUARDAR PRODUCTO
+    router.post('/panel-super/nuevo-producto', superController.addProductoPost);
+
+    //VER PANEL EDITAR PRODUCTO
+    router.get('/panel-super/editar-producto/:id',superController.formEditarProducto);
+
+    //POST EDITAR PRODUCTO
+    router.post('/panel-super/editar-producto/:id', superController.editarProductoPost);
+
+    //POST ELIMINAR PRODUCTO
+    router.post('/panel-super/eliminar-producto', superController.eliminarProducto);
+
 
 
 

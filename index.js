@@ -6,6 +6,7 @@ const db = require('./config/db');
 const bodyParser = require('body-parser');
 const flash = require('connect-flash');
 const cookieParser = require('cookie-parser');
+const session = require('express-session');
 const expressValidator = require('express-validator');
 
 
@@ -14,6 +15,7 @@ db.sync().then(() => console.log('DB CONECTADA')).catch(error => console.log(err
 
 //Modelo a utilizar
 require('./models/Productos');
+require('./models/Categorias');
 
 
 //Variable de desarrollo
@@ -43,8 +45,23 @@ app.use(express.static('public'));
 //habilitacion del cookie parser(cookie en el servidor)
 app.use(cookieParser());
 
+//crear la sesion
+app.use(session({
+    secret: process.env.SECRETO,
+    key: process.env.KEY,
+    resave: false,
+    saveUninitialized: false
+}));
+
 //habilitar flash message
 app.use(flash());
+
+//Middleware propio(flash message)
+app.use((req,res,next) => {
+   res.locals.mensajes = req.flash();
+   next();
+});
+
 
 //Ruta de raiz
 app.use('/', router());
